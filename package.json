@@ -1,0 +1,26 @@
+{
+  "name": "react-native-soundcloud",
+  "version": "1.0.0",
+  "description": "A wrapper for the Soundcloud API built for React Native, optionally works with NodeJS with the `node-fetch` package.",
+  "main": "soundcloud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osagie/react-native-soundcloud.git"
+  },
+  "optionalDependencies": {
+    "node-fetch": "1.x"
+  },
+  "keywords": [
+    "soundcloud",
+    "react-native"
+  ],
+  "author": "@OSAGIETHEGREAT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osagie/react-native-soundcloud/issues"
+  },
+  "homepage": "https://github.com/osagie/react-native-soundcloud#readme"
+}

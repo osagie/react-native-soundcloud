@@ -1,0 +1,3 @@
+A wrapper for the Soundcloud API built for React Native & NodeJS (with node-fetch).
+
+I needed it for a project, so it will mainly encompass features that I have immediate need for.
