@@ -14,7 +14,7 @@
     "querystring": "0.2.x",
     "tinycache": "1.1.0"
   },
-  "optionalDependencies": {
+  "peerDependencies": {
     "node-fetch": "1.x"
   },
   "keywords": [
