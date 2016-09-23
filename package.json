@@ -1,6 +1,6 @@
 {
   "name": "react-native-soundcloud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper for the Soundcloud API built for React Native, optionally works with NodeJS with the `node-fetch` package.",
   "main": "soundcloud.js",
   "scripts": {
