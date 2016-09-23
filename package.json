@@ -11,7 +11,8 @@
     "url": "git+https://github.com/osagie/react-native-soundcloud.git"
   },
   "dependencies": {
-    "querystring": "0.2.x"
+    "querystring": "0.2.x",
+    "tinycache": "1.1.0"
   },
   "optionalDependencies": {
     "node-fetch": "1.x"

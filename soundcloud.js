@@ -1,29 +1,28 @@
 var request = require('./lib/sc_request.js');
+var User = require('./lib/sc_user.js');
 var cache = null;
 
-function Soundcloud(apiKey) {
+function Soundcloud(apiKey, options) {
   console.log('API KEY', apiKey);
   request.setApiKey(apiKey);
+  this.shouldCache = false;
 };
 
 Soundcloud.prototype.getUserByName = function(username) {
+  var shouldCache = this.shouldCache;
   if (shouldCache && users[username]) {
     return Promise.resolve(users[username]);
   }
-  var url = 'https://soundcloud.com/' + username;
-  return request.resolve(url)
-    .then((user) => {
-      console.log('user', user);
+  return request.resolve('https://soundcloud.com/' + username)
+    .then(function(user) {
       if (user && user.id) {
+        user = new User(user);
         if (shouldCache) { users[username] = user; }
-        return Promise.resolve(user);
+        return user;
       } return Promise.reject(new Error('Failed to getUserByName for username: ' + username));
   });
 }
 
-var sc = new Soundcloud('350d81025db4e94e858da4e03c2e22e8');
-sc.getUserByName('hbkdaghe').then(function(response) {
-  console.log(response);
-});
+Soundcloud.prototype.getTracks
 
 module.exports = Soundcloud;
