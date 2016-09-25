@@ -12,10 +12,9 @@
   },
   "dependencies": {
     "querystring": "0.2.x",
+    "request": "2.75.0",
+    "request-promise-native": "1.0.3",
     "tinycache": "1.1.0"
-  },
-  "peerDependencies": {
-    "node-fetch": "1.x"
   },
   "keywords": [
     "soundcloud",
